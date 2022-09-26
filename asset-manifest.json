@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/book-reader-frontend/static/css/main.3abb600a.css",
-    "main.js": "/book-reader-frontend/static/js/main.0ec10748.js",
+    "main.css": "/book-reader-frontend/static/css/main.ffc161c5.css",
+    "main.js": "/book-reader-frontend/static/js/main.396d2387.js",
     "static/media/header-sprite.svg": "/book-reader-frontend/static/media/header-sprite.903541f79910de66ae47b1ea9ced8324.svg",
     "index.html": "/book-reader-frontend/index.html",
-    "main.3abb600a.css.map": "/book-reader-frontend/static/css/main.3abb600a.css.map",
-    "main.0ec10748.js.map": "/book-reader-frontend/static/js/main.0ec10748.js.map"
+    "static/media/mobileinfo-sprite.svg": "/book-reader-frontend/static/media/mobileinfo-sprite.d1de0558ddb859dddd7fc6ed8067009c.svg",
+    "main.ffc161c5.css.map": "/book-reader-frontend/static/css/main.ffc161c5.css.map",
+    "main.396d2387.js.map": "/book-reader-frontend/static/js/main.396d2387.js.map"
   },
   "entrypoints": [
-    "static/css/main.3abb600a.css",
-    "static/js/main.0ec10748.js"
+    "static/css/main.ffc161c5.css",
+    "static/js/main.396d2387.js"
   ]
 }
