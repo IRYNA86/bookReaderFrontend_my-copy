@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/book-reader-frontend/static/css/main.ffc161c5.css",
-    "main.js": "/book-reader-frontend/static/js/main.396d2387.js",
+    "main.css": "/book-reader-frontend/static/css/main.4c3f5d44.css",
+    "main.js": "/book-reader-frontend/static/js/main.b1c15924.js",
     "static/media/header-sprite.svg": "/book-reader-frontend/static/media/header-sprite.903541f79910de66ae47b1ea9ced8324.svg",
     "index.html": "/book-reader-frontend/index.html",
+    "static/media/myTrainingPlaying.svg": "/book-reader-frontend/static/media/myTrainingPlaying.4e3553ed614284890cf4b0fdfc5eb692.svg",
     "static/media/mobileinfo-sprite.svg": "/book-reader-frontend/static/media/mobileinfo-sprite.d1de0558ddb859dddd7fc6ed8067009c.svg",
-    "main.ffc161c5.css.map": "/book-reader-frontend/static/css/main.ffc161c5.css.map",
-    "main.396d2387.js.map": "/book-reader-frontend/static/js/main.396d2387.js.map"
+    "main.4c3f5d44.css.map": "/book-reader-frontend/static/css/main.4c3f5d44.css.map",
+    "main.b1c15924.js.map": "/book-reader-frontend/static/js/main.b1c15924.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffc161c5.css",
-    "static/js/main.396d2387.js"
+    "static/css/main.4c3f5d44.css",
+    "static/js/main.b1c15924.js"
   ]
 }
