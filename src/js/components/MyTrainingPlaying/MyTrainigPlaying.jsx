@@ -1,12 +1,14 @@
 import DatePicker from 'react-datepicker';
+// import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { useState } from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 import s from '../MyTrainingPlaying/MyTrainingPlaying.module.css';
 import sprite from '../../../sprites/myTrainingPlaying.svg';
+// import { useTranslation } from 'react-i18next';
 
 function MyTrainingPlaying() {
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
 
   return (
     <form className={s.form}>
@@ -15,16 +17,21 @@ function MyTrainingPlaying() {
       </svg>
       <h2 className={s.title}>Моє тренування</h2>
       <div className={s.datePicker}>
-        <DatePicker
+
+       <DatePicker
           dateFormat="dd.MM.yyyy"
+          minDate={new Date()}
           selected={startDate}
           onChange={startDate => setStartDate(startDate)}
+          placeholderText={'Початок'}
           className={s.datePickerInput}
         />
         <DatePicker
           dateFormat="dd.MM.yyyy"
+          minDate={new Date()}
           selected={endDate}
           onChange={endDate => setEndDate(endDate)}
+          placeholderText={'Закінчення'}
           className={s.datePickerInput}
         />
       </div>

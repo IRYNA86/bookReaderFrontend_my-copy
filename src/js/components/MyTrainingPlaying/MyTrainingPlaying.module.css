@@ -59,19 +59,12 @@
     border: 2px solid #a6abb9;
     margin-top: 20px;
   }
-  
-}
+  }
 @media screen and (min-width: 768px) {
   .datePickerInput {
     width: 250px;
-  }
-  
-}
-@media screen and (min-width: 768px) {
-  .dataPickerInput:nth-last-child(2) {
-    margin-left: 40px;
-  }
-}
+  } 
+  } 
 @media screen and (min-width: 768px) {
   .selectBtn {
     display: flex;

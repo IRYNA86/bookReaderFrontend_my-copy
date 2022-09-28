@@ -1,7 +1,7 @@
 // додати до реєстрації
 // import Media from 'react-media';
 import InfoMobile from 'js/pages/InfoMobile/InfoMobile';
-
+import { ToastContainer } from 'react-toastify';
 import Container from 'js/utils/Container/Container';
 import AppBar from './AppBar/AppBar';
 import { Route, Routes } from 'react-router-dom';
@@ -20,6 +20,7 @@ export const App = () => {
           <Route path="/library" element={<LibraryForm />} />
         
       </Routes>
+      <ToastContainer position="top-right" autoClose={3000} />
     </Container>
   );
 };
