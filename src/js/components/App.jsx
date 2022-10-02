@@ -7,13 +7,18 @@ import AppBar from './AppBar/AppBar';
 import { Route, Routes } from 'react-router-dom';
 // import ModalLibrary from './ModalLibrary/Modal-library';
 import LibraryForm from './LibraryForm/LibraryForm';
+// import ModalYouAreCool from './ModalYouAreCool/ModalYouAreCool';
 // import MyTrainingPlaying from './MyTrainingPlaying/MyTrainigPlaying';
-import ModalResume from './ReitingModal/ReitingModal';
+// import ModalResume from './ReitingModal/ReitingModal';
+import ModalCongrats from './ModalCongrats/ModalCongrats';
+
 export const App = () => {
   return (
     <Container>
       <AppBar />
-      <ModalResume />
+      <ModalCongrats/>
+      {/* <ModalYouAreCool/> */}
+      {/* <ModalResume /> */}
 {/* <MyTrainingPlaying/> */}
       <Routes>
         <Route path="/" element={<InfoMobile />}/>
