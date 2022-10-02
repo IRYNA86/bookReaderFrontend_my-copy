@@ -10,13 +10,20 @@ import LibraryForm from './LibraryForm/LibraryForm';
 // import ModalYouAreCool from './ModalYouAreCool/ModalYouAreCool';
 // import MyTrainingPlaying from './MyTrainingPlaying/MyTrainigPlaying';
 // import ModalResume from './ReitingModal/ReitingModal';
-import ModalCongrats from './ModalCongrats/ModalCongrats';
+// import ModalCongrats from './ModalCongrats/ModalCongrats';
+import ModalLibrary from './ModalLibrary/Modal-library';
+import { useState } from 'react';
 
 export const App = () => {
+  const [showModal, setShowModal] = useState(true);
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
   return (
     <Container>
       <AppBar />
-      <ModalCongrats/>
+      {/* <ModalCongrats/> */}
+      {showModal && (<ModalLibrary onClose={toggleModal}/>)}
       {/* <ModalYouAreCool/> */}
       {/* <ModalResume /> */}
 {/* <MyTrainingPlaying/> */}

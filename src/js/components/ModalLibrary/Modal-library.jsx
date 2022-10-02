@@ -2,12 +2,33 @@ import '../../../sass/components/ModalLibrary/Modal-library.css';
 import '../../../sass/utils/_reset.scss';
 import { createPortal } from 'react-dom';
 import sprite from '../../../sprites/library-sprite.svg';
+import { useEffect } from 'react';
 
 const modalRoot = document.querySelector('#modal-root');
 
-function ModalLibrary() {
+function ModalLibrary({ onClose }) 
+{
+    const onKeyDown = event => {
+    if (event.code === 'Escape') {
+      onClose();
+    }
+  };
+
+  const onBackdropClick = event => {
+    if (event.currentTarget === event.target) {
+      onClose();
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  });
   return createPortal(
-    <div className="backdrop">
+    <div className="backdrop" onClick={onBackdropClick}>
       <div className="modal">
         <div className="wrapper">
           <div className="firstStep">
@@ -54,7 +75,7 @@ function ModalLibrary() {
               </div>
             </div>
           </div>
-          <button className="modal-button" type="button">
+          <button className="modal-button" type="button" onClick={() => onClose()}>
             Ok
           </button>
         </div>
