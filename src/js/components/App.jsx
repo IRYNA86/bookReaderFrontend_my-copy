@@ -1,6 +1,6 @@
 // додати до реєстрації
 // import Media from 'react-media';
-import InfoMobile from 'js/pages/InfoMobile/InfoMobile';
+// import InfoMobile from 'js/pages/InfoMobile/InfoMobile';
 import { ToastContainer } from 'react-toastify';
 import Container from 'js/utils/Container/Container';
 import AppBar from './AppBar/AppBar';
@@ -13,6 +13,7 @@ import LibraryForm from './LibraryForm/LibraryForm';
 // import ModalCongrats from './ModalCongrats/ModalCongrats';
 import ModalLibrary from './ModalLibrary/Modal-library';
 import { useState } from 'react';
+import Timer from './Timer/Timer';
 
 export const App = () => {
   const [showModal, setShowModal] = useState(true);
@@ -23,12 +24,13 @@ export const App = () => {
     <Container>
       <AppBar />
       {/* <ModalCongrats/> */}
+      <Timer/>
       {showModal && (<ModalLibrary onClose={toggleModal}/>)}
       {/* <ModalYouAreCool/> */}
       {/* <ModalResume /> */}
 {/* <MyTrainingPlaying/> */}
       <Routes>
-        <Route path="/" element={<InfoMobile />}/>
+        {/* <Route path="/" element={<InfoMobile />}/> */}
         
           <Route path="/login" element={<p>Login</p>} />
           <Route path="/register" element={<p>Register</p>} />
